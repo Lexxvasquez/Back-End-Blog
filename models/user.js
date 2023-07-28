@@ -39,4 +39,4 @@ User.init({
   modelName:"User"
 });
 
-model.exports=User;
+model.exports=User
