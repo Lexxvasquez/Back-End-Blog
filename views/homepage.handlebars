@@ -1,7 +1,12 @@
 <ul class="postList">
   {{#each posts as |post|}}
-  <li>
-    {{> postInformation post }}
-  </li>
+    <div>
+      <header>
+        <h3> {{post.title}} </h3>
+        <h3> Posted by on {{post.createdAt}} </h3>
+      </header>
+      
+      <p>{{post.post_text}}</p>
+    </div>
   {{/each}}
 </ul>
